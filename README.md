@@ -12,12 +12,20 @@
 
 ## 安装
 
-在 Harness 里通过插件管理器安装本包（推荐），或手动把本目录加进 profile：
+在 Harness 里通过插件管理器安装本包（推荐），或一行命令装进某个 profile（会自动登记 `dsh.profile.bundles`）：
+
+```bash
+dsh plugin --profile web add github:lcalc-lcalc/dsh-persona
+```
+
+也可以先 clone 再安装本地目录（适合改代码）：
 
 ```bash
 git clone https://github.com/lcalc-lcalc/dsh-persona
 dsh plugin --profile web add ./dsh-persona
 ```
+
+> 桌面版（`desktop` profile）由 Electron 独占，CLI 不能直接写入；请在 Harness 的「插件」页面安装，或按下面的方式手工登记。
 
 然后在 profile 的 `package.json` 中确认：
 
