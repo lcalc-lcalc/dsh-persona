@@ -15,8 +15,8 @@
 在 Harness 里通过插件管理器安装本包（推荐），或手动把本目录加进 profile：
 
 ```bash
-# 以 Web profile 为例
-dsh plugin --profile web add /path/to/dsh-persona
+git clone https://github.com/lcalc-lcalc/dsh-persona
+dsh plugin --profile web add ./dsh-persona
 ```
 
 然后在 profile 的 `package.json` 中确认：

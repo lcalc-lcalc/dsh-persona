@@ -11,6 +11,15 @@
     "chain-of-thought"
   ],
   "license": "MIT",
+  "author": "Chegan Coco",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcalc-lcalc/dsh-persona.git"
+  },
+  "homepage": "https://github.com/lcalc-lcalc/dsh-persona#readme",
+  "bugs": {
+    "url": "https://github.com/lcalc-lcalc/dsh-persona/issues"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
